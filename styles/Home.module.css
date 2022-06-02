@@ -117,42 +117,6 @@
   height: 1em;
   margin-left: 0.5rem;
 }
-/* 
-@property --a {
-  initial-value: 0deg;
-  inherits: false;
-  syntax: '<angle>';
-}
-@property --h {
-  initial-value: 0;
-  inherits: false;
-  syntax: '<number>';
-}
-
-.loader {
-  padding: 2rem 3rem;
-  border-style: solid;
-  border-width: 3px;
-  --charge: hsl(var(--h, 0), 80%, 50%);
-  border-image: conic-gradient(
-      var(--charge) var(--a),
-      transparent calc(var(--a) + 0.5deg)
-    )
-    30;
-  animation: load 2s infinite ease-in-out;
-}
-
-@keyframes load {
-  0%,
-  10% {
-    --a: 0deg;
-    --h: 0;
-  }
-  100% {
-    --a: 360deg;
-    --h: 100;
-  }
-} */
 
 .gradientBorder {
   --border-width: 3px;
@@ -185,7 +149,6 @@
   background-position: 0 50%;
   border-radius: calc(2 * var(--border-width));
   animation: moveGradient 2s alternate infinite;
-  /* -webkit-animation: moveGradient 2s alternate infinite; */
 }
 
 @keyframes moveGradient {
@@ -193,12 +156,6 @@
     background-position: 100% 50%;
   }
 }
-
-/* @-webkit-keyframes moveGradient {
-  50% {
-    background-position: 100% 50%;
-  }
-} */
 
 @media (max-width: 600px) {
   .grid {
