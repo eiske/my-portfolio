@@ -117,7 +117,7 @@
   height: 1em;
   margin-left: 0.5rem;
 }
-
+/* 
 @property --a {
   initial-value: 0deg;
   inherits: false;
@@ -151,6 +151,52 @@
   100% {
     --a: 360deg;
     --h: 100;
+  }
+} */
+
+.gradientBorder {
+  --border-width: 3px;
+  position: relative;
+  padding: 2rem 3rem;
+  color: white;
+  background: #222;
+  border-radius: var(--border-width);
+}
+.gradientBorder::after {
+  position: absolute;
+  content: '';
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(
+    60deg,
+    #5f86f2,
+    #a65ff2,
+    #f25fd0,
+    #f25f61,
+    #f2cb5f,
+    #abf25f,
+    #5ff281,
+    #5ff2f0
+  );
+  background-size: 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+  animation: moveGradient 2s infinite ease-in-out;
+  -webkit-animation: moveGradient 2s infinite ease-in-out;
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@-webkit-keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
   }
 }
 
