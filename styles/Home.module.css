@@ -184,8 +184,8 @@
   background-size: 300%;
   background-position: 0 50%;
   border-radius: calc(2 * var(--border-width));
-  animation: moveGradient 2s infinite ease-in-out;
-  -webkit-animation: moveGradient 2s infinite ease-in-out;
+  animation: moveGradient 2s alternate infinite;
+  -webkit-animation: moveGradient 2s alternate infinite;
 }
 
 @keyframes moveGradient {
@@ -194,11 +194,11 @@
   }
 }
 
-@-webkit-keyframes moveGradient {
+/* @-webkit-keyframes moveGradient {
   50% {
     background-position: 100% 50%;
   }
-}
+} */
 
 @media (max-width: 600px) {
   .grid {
