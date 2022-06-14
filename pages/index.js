@@ -24,7 +24,7 @@ export default function Home() {
           />
         </div>
 
-        <h2 className={styles.gradientBorder}>comming soon...</h2>
+        <h2 className={styles.gradientBorder}>coming soon...</h2>
         <div className={styles.grid}>
           <a href='https://github.com/eiske' className={styles.card}>
             <h2>
