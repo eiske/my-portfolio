@@ -6,8 +6,9 @@ import { cn } from "@/lib/utils";
 const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "Vinicius Eiske",
-  description: "Eiske portfolio",
+  title: "Vinicius Eiske - Frontend Developer",
+  description:
+    "I'm a passionate frontend developer based in Florianópolis. I specialize in building exceptional digital experiences using ReactJS, NextJS, JavaScript, and TypeScript.",
 };
 
 export default function RootLayout({
