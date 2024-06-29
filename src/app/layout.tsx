@@ -1,14 +1,13 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
-import { cn } from '@/lib/utils';
-import MainNav from '@/components/MainNav';
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { cn } from "@/lib/utils";
 
-const fontSans = Inter({ subsets: ['latin'], variable: '--font-sans' });
+const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: 'Vinicius Eiske - portfolio',
-  description: 'Eiske portfolio',
+  title: "Vinicius Eiske",
+  description: "Eiske portfolio",
 };
 
 export default function RootLayout({
@@ -18,9 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
-        <MainNav />
-        <div className='my-6'>{children}</div>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable
+        )}
+      >
+        <main>{children}</main>
       </body>
     </html>
   );
