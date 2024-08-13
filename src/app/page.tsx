@@ -50,7 +50,7 @@ export default function Home() {
                 ReactJS, NextJS, NodeJS, JavaScript, and TypeScript.
               </p>
               <p className="my-4">
-                Currently, I'm working as a software engineer at Valtech, where
+                Currently, I'm working as a software developer at Valtech, where
                 I develop and maintain software for digital projects.
                 Previously, I contributed to developing innovative solutions at
                 Getmore and Shiftcode.
