@@ -76,6 +76,7 @@ export default function Home() {
               <ul className="list-none text-nowrap font-semibold">
                 <li>React</li>
                 <li>Next.js</li>
+                <li>Node.js</li>
                 <li>TypeScript</li>
                 <li>JavaScript</li>
                 <li>Amateur Runner 🏃‍♂️</li>
