@@ -45,13 +45,13 @@ export default function Home() {
                 About Me
               </h2>
               <p className="my-4">
-                I'm a passionate frontend developer based in Florianópolis. I
+                I'm a software engineer based in Florianópolis. I
                 specialize in building exceptional digital experiences using
-                ReactJS, NextJS, JavaScript, and TypeScript.
+                ReactJS, NextJS, NodeJS, JavaScript, and TypeScript.
               </p>
               <p className="my-4">
-                Currently, I'm working as a frontend developer at Valtech, where
-                I create responsive components and pages for digital projects.
+                Currently, I'm working as a software engineer at Valtech, where
+                I develop and maintain software for digital projects.
                 Previously, I contributed to developing innovative solutions at
                 Getmore and Shiftcode.
               </p>
