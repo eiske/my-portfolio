@@ -1,15 +1,28 @@
 "use client";
 import Carousel from "@/components/Carousel";
 import { Button } from "@/components/ui/button";
+import Particles from "@/components/ui/particles";
+import PixelTransition from "@/components/ui/pixel-transition";
 import { onScrollToTop } from "@/lib/utils";
 import { ArrowUp } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="content">
-      <div className="z-2 mb-[600px] md:mb-[100vh] bg-[#07020D] text-[#F1E9DB] relative">
-        <div className="container min-h-[94vh] max-w-3xl flex flex-col justify-center xl:max-w-6xl max-sm:pt-12">
+    <div className="content overflow-auto">
+      <div className="z-2 mb-[600px] h-screen md:mb-[100vh] bg-[#07020D] text-[#F1E9DB] relative">
+        <Particles
+          particleColors={["#ffffff", "#ffffff"]}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover
+          alphaParticles={false}
+          disableRotation
+          className="absolute inset-0 pointer-events-none"
+        />
+        <div className="container min-h-[94vh] max-w-3xl flex flex-col justify-center xl:max-w-6xl max-sm:pt-12 absolute inset-0">
           <div className="mx-auto">
             <header>
               <h1
@@ -26,7 +39,41 @@ export default function Home() {
                   橋元 英助
                 </h2>
               </div>
-              <Image
+              <div className="w-full max-w-[23rem] mt-4 mb-6 mx-auto sm:float-right sm:w-3/6 sm:max-w-[27rem] xl:float-left xl:w-[25rem] xl:pr-16">
+                <PixelTransition
+                  firstContent={
+                    <div className="relative">
+                      <p className="opacity-30 text-amber-100 absolute left-2 top-2">
+                        Look closely 👀
+                      </p>
+                      <Image
+                        className="object-cover"
+                        alt="Photo of Vinicius Eiske"
+                        src="/eiske.jpeg"
+                        width={300}
+                        height={300}
+                        priority
+                      />
+                    </div>
+                  }
+                  secondContent={
+                    <Image
+                      className="object-cover"
+                      alt="Photo of my cat Tama"
+                      src="/tama.jpg"
+                      width={300}
+                      height={300}
+                      priority
+                    />
+                  }
+                  gridSize={12}
+                  pixelColor="#ffffff"
+                  animationStepDuration={0.4}
+                  className="custom-pixel-card border-none"
+                />
+              </div>
+
+              {/* <Image
                 className="object-cover w-full max-w-[23rem] mt-4 mb-6 mx-auto sm:float-right sm:w-3/6 sm:max-w-[27rem] xl:float-left xl:w-[25rem] xl:pr-16"
                 alt="Photo of Vinicius Eiske"
                 src="/eiske.jpeg"
@@ -34,7 +81,7 @@ export default function Home() {
                 height={300}
                 priority
                 role="img"
-              />
+              /> */}
             </header>
             <section
               className="max-w-[27rem] sm:float-left sm:w-[45%] xl:float-left xl:w-[45%] xl:pr-16 xl:max-w-none"
@@ -45,9 +92,9 @@ export default function Home() {
                 About Me
               </h2>
               <p className="my-4">
-                I'm a software engineer based in Florianópolis. I
-                specialize in building exceptional digital experiences using
-                ReactJS, NextJS, NodeJS, JavaScript, and TypeScript.
+                I'm a software engineer based in Florianópolis. I specialize in
+                building exceptional digital experiences using ReactJS, NextJS,
+                NodeJS, JavaScript, and TypeScript.
               </p>
               <p className="my-4">
                 Currently, I'm working as a software developer at Valtech, where
@@ -84,7 +131,7 @@ export default function Home() {
             </section>
           </div>
         </div>
-        <section className="py-12 mx-auto md:max-w-4xl md:pt-0">
+        <section className="py-12 mx-auto md:max-w-4xl md:pt-0 absolute bottom-1 left-0 right-0">
           <Carousel />
         </section>
       </div>
