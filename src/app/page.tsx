@@ -1,11 +1,18 @@
 "use client";
 import Carousel from "@/components/Carousel";
 import { Button } from "@/components/ui/button";
-import Particles from "@/components/ui/particles";
-import PixelTransition from "@/components/ui/pixel-transition";
 import { onScrollToTop } from "@/lib/utils";
 import { ArrowUp } from "lucide-react";
+import dynamic from "next/dynamic";
 import Image from "next/image";
+
+const Particles = dynamic(() => import("@/components/ui/particles"), {
+  ssr: false,
+});
+const PixelTransition = dynamic(
+  () => import("@/components/ui/pixel-transition"),
+  { ssr: false }
+);
 
 export default function Home() {
   return (
