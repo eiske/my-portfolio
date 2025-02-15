@@ -79,16 +79,6 @@ export default function Home() {
                   className="custom-pixel-card border-none"
                 />
               </div>
-
-              {/* <Image
-                className="object-cover w-full max-w-[23rem] mt-4 mb-6 mx-auto sm:float-right sm:w-3/6 sm:max-w-[27rem] xl:float-left xl:w-[25rem] xl:pr-16"
-                alt="Photo of Vinicius Eiske"
-                src="/eiske.jpeg"
-                width={300}
-                height={300}
-                priority
-                role="img"
-              /> */}
             </header>
             <section
               className="max-w-[27rem] sm:float-left sm:w-[45%] xl:float-left xl:w-[45%] xl:pr-16 xl:max-w-none"
@@ -104,10 +94,9 @@ export default function Home() {
                 NodeJS, JavaScript, and TypeScript.
               </p>
               <p className="my-4">
-                Currently, I'm working as a software developer at Valtech, where
-                I develop and maintain software for digital projects.
-                Previously, I contributed to developing innovative solutions at
-                Getmore and Shiftcode.
+                I am currently a software developer, working on creating digital
+                solutions. Throughout my career, I have contributed to impactful
+                projects in diverse environments.
               </p>
               <p className="my-4">
                 I have a strong interest in creating efficient design systems,
