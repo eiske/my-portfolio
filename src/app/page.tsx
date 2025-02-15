@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="content">
-      <div className="z-[2] mb-[600px] md:mb-[100vh] bg-[#07020D] text-[#F1E9DB] relative">
+      <div className="z-2 mb-[600px] md:mb-[100vh] bg-[#07020D] text-[#F1E9DB] relative">
         <div className="container min-h-[94vh] max-w-3xl flex flex-col justify-center xl:max-w-6xl max-sm:pt-12">
           <div className="mx-auto">
             <header>
@@ -89,7 +89,7 @@ export default function Home() {
         </section>
       </div>
       <footer
-        className="h-[600px] md:h-screen bg-[#F1E9DB] fixed bottom-0 left-0 w-full z-[1]"
+        className="h-[600px] md:h-screen bg-[#F1E9DB] fixed bottom-0 left-0 w-full z-1"
         role="contentinfo"
       >
         <div className="h-full flex items-center justify-center">
