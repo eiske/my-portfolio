@@ -17,9 +17,9 @@ const PixelTransition = dynamic(
 export default function Home() {
   return (
     <div className="content overflow-auto">
-      <div className="z-2 mb-[600px] h-screen md:mb-[100vh] bg-[#07020D] text-[#F1E9DB] relative">
-        <Particles
-          particleColors={["#ffffff", "#ffffff"]}
+      <div className="z-2 mb-[600px] min-h-screen h-fit md:mb-[100vh] bg-[#07020D] text-[#F1E9DB] relative">
+        {/* <Particles
+          particleColors={["#ffffff", "#525bda"]}
           particleCount={200}
           particleSpread={10}
           speed={0.1}
@@ -28,8 +28,8 @@ export default function Home() {
           alphaParticles={false}
           disableRotation
           className="absolute inset-0 pointer-events-none"
-        />
-        <div className="container min-h-[94vh] max-w-3xl flex flex-col justify-center xl:max-w-6xl max-sm:pt-12 absolute inset-0">
+        /> */}
+        <div className="container min-h-[94vh] max-w-3xl flex flex-col justify-center xl:max-w-6xl max-sm:pt-12">
           <div className="mx-auto">
             <header>
               <h1
@@ -127,7 +127,7 @@ export default function Home() {
             </section>
           </div>
         </div>
-        <section className="py-12 mx-auto md:max-w-4xl md:pt-0 absolute bottom-1 left-0 right-0">
+        <section className="py-12 mx-auto md:max-w-4xl md:pt-0">
           <Carousel />
         </section>
       </div>
