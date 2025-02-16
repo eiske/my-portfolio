@@ -120,15 +120,12 @@ const PixelTransition: React.FC<PixelTransitionProps> = ({
       ref={containerRef}
       className={`
         ${className}
-        bg-[#222]
-        text-white
         rounded-[15px]
-        border-2
-        border-white
         w-[300px]
         max-w-full
         relative
         overflow-hidden
+        mx-auto
       `}
       style={style}
       onMouseEnter={!isTouchDevice ? handleMouseEnter : undefined}
