@@ -18,17 +18,17 @@ export default function Home() {
   return (
     <div className="content overflow-auto">
       <div className="z-2 mb-[600px] min-h-screen h-fit md:mb-[100vh] bg-[#07020D] text-[#F1E9DB] relative">
-        {/* <Particles
+        <Particles
           particleColors={["#ffffff", "#525bda"]}
           particleCount={200}
           particleSpread={10}
-          speed={0.1}
-          particleBaseSize={100}
+          speed={0.4}
+          particleBaseSize={150}
           moveParticlesOnHover
           alphaParticles={false}
           disableRotation
-          className="absolute inset-0 pointer-events-none"
-        /> */}
+          className="absolute inset-0 pointer-events-none -z-10"
+        />
         <div className="container min-h-[94vh] max-w-3xl flex flex-col justify-center xl:max-w-6xl max-sm:pt-12">
           <div className="mx-auto">
             <header>
@@ -46,7 +46,7 @@ export default function Home() {
                   橋元 英助
                 </h2>
               </div>
-              <div className="w-full max-w-[23rem] mt-4 mb-6 mx-auto sm:float-right sm:w-3/6 sm:max-w-[27rem] xl:float-left xl:w-[25rem] xl:pr-16">
+              <div className="max-w-[23rem] mt-4 mb-6 mx-auto sm:float-right sm:w-3/6  xl:float-left xl:w-[25rem] xl:pr-16">
                 <PixelTransition
                   firstContent={
                     <div className="relative">
